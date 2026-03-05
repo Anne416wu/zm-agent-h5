@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中缅公盘·全国代理人招募</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'PingFang SC', 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        
+        .container {
+            max-width: 640px;
+            margin: 0 auto;
+            background-color: #fff;
+            min-height: 100vh;
+        }
+        
+        .section {
+            padding: 40px 20px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .section-1 {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=翡翠原石%20中缅公盘现场%20昆明地标&image_size=landscape_16_9');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            text-align: center;
+        }
+        
+        .section-7 {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=倒计时%20名额告急%20紧急提醒&image_size=landscape_16_9');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        h2 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        
+        h3 {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #333;
+        }
+        
+        .subtitle {
+            font-size: 16px;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+        
+        .highlight {
+            color: #ff6b35;
+            font-weight: bold;
+        }
+        
+        .core-selling-points {
+            margin: 30px 0;
+            text-align: left;
+        }
+        
+        .core-selling-points li {
+            list-style: none;
+            margin-bottom: 15px;
+            padding-left: 30px;
+            position: relative;
+        }
+        
+        .core-selling-points li:before {
+            content: '✅';
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        
+        .btn {
+            display: block;
+            width: 100%;
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 15px;
+            background: linear-gradient(135deg, #ff6b35, #f7931e);
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 107, 53, 0.4);
+        }
+        
+        .stats {
+            margin-top: 20px;
+            font-size: 14px;
+            opacity: 0.8;
+        }
+        
+        .section-content {
+            margin: 20px 0;
+        }
+        
+        .section-content p {
+            margin-bottom: 15px;
+            line-height: 1.8;
+        }
+        
+        .section-content ul {
+            margin: 20px 0;
+            padding-left: 20px;
+        }
+        
+        .section-content li {
+            margin-bottom: 10px;
+        }
+        
+        .image-suggestion {
+            margin: 20px 0;
+            text-align: center;
+        }
+        
+        .image-suggestion img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .calculation {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        
+        .calculation h4 {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        
+        .calculation p {
+            margin-bottom: 10px;
+        }
+        
+        .personas {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .persona {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        
+        .persona-icon {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+        
+        .persona h4 {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .steps {
+            margin: 30px 0;
+        }
+        
+        .step {
+            display: flex;
+            margin-bottom: 30px;
+        }
+        
+        .step-number {
+            width: 40px;
+            height: 40px;
+            background-color: #ff6b35;
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-right: 20px;
+            flex-shrink: 0;
+        }
+        
+        .step-content {
+            flex: 1;
+        }
+        
+        .step-content h4 {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .faq {
+            margin: 30px 0;
+        }
+        
+        .faq-item {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+        
+        .faq-question {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        
+        .faq-answer {
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        .form {
+            margin: 30px 0;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #333;
+        }
+        
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        
+        .form-group input[type="radio"] {
+            width: auto;
+            margin-right: 10px;
+        }
+        
+        .radio-group {
+            display: flex;
+            gap: 20px;
+        }
+        
+        .radio-option {
+            display: flex;
+            align-items: center;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 30px 20px;
+            background-color: #f9f9f9;
+            margin-top: 40px;
+        }
+        
+        .footer p {
+            margin-bottom: 10px;
+            font-size: 14px;
+            color: #666;
+        }
+        
+        .footer small {
+            font-size: 12px;
+            color: #999;
+        }
+        
+        .nav-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+        }
+        
+        .nav-btn {
+            padding: 10px 20px;
+            background-color: #f0f0f0;
+            color: #333;
+            text-decoration: none;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+        
+        .hidden {
+            display: none;
+        }
+        
+        @media (max-width: 768px) {
+            .section {
+                padding: 30px 15px;
+            }
+            
+            h1 {
+                font-size: 28px;
+            }
+            
+            h2 {
+                font-size: 22px;
+            }
+            
+            .radio-group {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 页面1：首页 · 一眼抓住 -->
+        <section id="page1" class="section section-1">
+            <h1>中缅公盘·全国代理人招募</h1>
+            <p class="subtitle">不用投钱，躺赚佣金</p>
+            <p class="subtitle">缅甸一手货源 | 官方结算保障 | 扫码即加入</p>
+            
+            <div class="core-selling-points">
+                <li>0成本加入，不坐班不打卡</li>
+                <li>发展团队拿0.7%永久流水提成</li>
+                <li>交易完3天佣金到账</li>
+            </div>
+            
+            <a href="#page5" class="btn">🔥 立即申请成为代理人</a>
+            <p class="stats">已有327人加入，今日23人报名</p>
+        </section>
+        
+        <!-- 页面2：我们是谁 · 建立信任 -->
+        <section id="page2" class="section">
+            <h2>依托中缅公盘，做跨境贸易的“中间人”</h2>
+            
+            <div class="section-content">
+                <p>我们是中缅公盘官方授权的市场化渠道拓展机构。</p>
+                <p>背后是连接中国与缅甸的大宗商品超级通道：</p>
+                <ul>
+                    <li>缅甸翡翠、农产品、矿产一手货源</li>
+                    <li>天府商品交易所战略合作，资金安全有保障</li>
+                    <li>“前店后仓”保税模式，交易合规透明</li>
+                </ul>
+                <p>不用你囤货，不用你垫资，只需要你带上人脉，剩下的我们来搞定。</p>
+            </div>
+            
+            <div class="image-suggestion">
+                <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=中缅公盘现场照片%20签约仪式合照&image_size=landscape_4_3" alt="公盘现场">
+            </div>
+            
+            <div class="nav-buttons">
+                <a href="#page1" class="nav-btn">上一页</a>
+                <a href="#page3" class="nav-btn">下一页</a>
+            </div>
+        </section>
+        
+        <!-- 页面3：怎么赚钱 · 算账给他看 -->
+        <section id="page3" class="section">
+            <h2>你的资源，我们帮你变现</h2>
+            
+            <div class="calculation">
+                <h4>如果你做代理人：</h4>
+                <p>发展10个经纪人 → 每人每月做100万流水</p>
+                <p>你每月躺赚：10人 × 100万 × 0.7% = 7,000元</p>
+                <br>
+                <p>发展50个经纪人 → 每人每月做100万流水</p>
+                <p>你每月躺赚：50人 × 100万 × 0.7% = 35,000元</p>
+            </div>
+            
+            <div class="calculation">
+                <h4>如果你自己也做业务：</h4>
+                <p>自己成交一单1000万翡翠 → 总佣金30万</p>
+                <p>你到手：</p>
+                <ul>
+                    <li>团队管理提成：30万 × 0.7% = 2,100元</li>
+                    <li>直接佣金：30万 × 2% = 6,000元</li>
+                    <li>合计：8,100元（一单就赚这么多）</li>
+                </ul>
+            </div>
+            
+            <div class="section-content">
+                <h3 class="highlight">上不封顶，做得越多赚得越多</h3>
+                <p>一年做到一个小目标，年入百万不是梦</p>
+            </div>
+            
+            <div class="nav-buttons">
+                <a href="#page2" class="nav-btn">上一页</a>
+                <a href="#page4" class="nav-btn">下一页</a>
+            </div>
+        </section>
+        
+        <!-- 页面4：谁适合来 · 对号入座 -->
+        <section id="page4" class="section">
+            <h2>你是哪一种？扫码加入就对了</h2>
+            
+            <div class="personas">
+                <div class="persona">
+                    <div class="persona-icon">🧑‍🤝‍🧑</div>
+                    <h4>有团队的人</h4>
+                    <p>带一帮兄弟，给他们找个来钱快的副业</p>
+                </div>
+                
+                <div class="persona">
+                    <div class="persona-icon">🗣️</div>
+                    <h4>人脉广的人</h4>
+                    <p>认识老板、认识商户，信任就是钱</p>
+                </div>
+                
+                <div class="persona">
+                    <div class="persona-icon">🌏</div>
+                    <h4>做跨境的人</h4>
+                    <p>熟悉缅甸，懂边贸，缺一个合规平台</p>
+                </div>
+                
+                <div class="persona">
+                    <div class="persona-icon">💼</div>
+                    <h4>想转型的人</h4>
+                    <p>手头项目不好做，想试试轻资产创业</p>
+                </div>
+            </div>
+            
+            <div class="section-content">
+                <p>不管你是哪一类，只要你想赚钱</p>
+                <p>我们给你方法，给你资源，给你分钱</p>
+            </div>
+            
+            <div class="nav-buttons">
+                <a href="#page3" class="nav-btn">上一页</a>
+                <a href="#page5" class="nav-btn">下一页</a>
+            </div>
+        </section>
+        
+        <!-- 页面5：怎么加入 · 三步走 -->
+        <section id="page5" class="section">
+            <h2>三步成为代理人，简单得像点外卖</h2>
+            
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">①</div>
+                    <div class="step-content">
+                        <h4>扫码报名</h4>
+                        <p>填写姓名+手机号，1分钟搞定</p>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">②</div>
+                    <div class="step-content">
+                        <h4>面谈签约</h4>
+                        <p>我们联系你，聊聊资源，签协议</p>
+                        <p>缴纳保证金（1-5万，合作期满全额退）</p>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">③</div>
+                    <div class="step-content">
+                        <h4>开始赚钱</h4>
+                        <p>参加培训，拉团队，找业务</p>
+                        <p>总部全程陪跑，直到你赚到第一桶金</p>
+                    </div>
+                </div>
+            </div>
+            
+            <a href="#form" class="btn">👉 马上报名，抢占区域名额</a>
+            <p class="stats">名额有限，先到先得</p>
+            
+            <div class="nav-buttons">
+                <a href="#page4" class="nav-btn">上一页</a>
+                <a href="#page6" class="nav-btn">下一页</a>
+            </div>
+        </section>
+        
+        <!-- 页面6：常见问题 · 打消顾虑 -->
+        <section id="page6" class="section">
+            <h2>常见问题 · 打消顾虑</h2>
+            
+            <div class="faq">
+                <div class="faq-item">
+                    <div class="faq-question">Q：要交钱吗？</div>
+                    <div class="faq-answer">A：需缴纳1-5万保证金。这不是收费，是为了筛选真想做事的人。合作满一年无违规，全额无息退还。</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Q：要坐班吗？</div>
+                    <div class="faq-answer">A：完全不用。你只需要发展团队、维护关系，交易手续、合同、结算全部总部搞定。</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Q：我不会做怎么办？</div>
+                    <div class="faq-answer">A：每月免费培训，一对一陪跑。从怎么谈客户、怎么带团队，到怎么成交大单，手把手教。</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Q：佣金安全吗？</div>
+                    <div class="faq-answer">A：天府商品交易所对公结算，系统自动分账，资金不过人手，3个工作日内到账，从不拖欠。</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Q：一个区域招几个代理人？</div>
+                    <div class="faq-answer">A：核心城市（瑞丽、腾冲、昆明、成都、广州）每个城市只招1名独家代理人，签完即止。</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Q：我没有团队，能直接做经纪人吗？</div>
+                    <div class="faq-answer">A：当然可以。先做一线经纪人拿2%直接佣金，等熟悉了再升级为代理人。扫码报名时备注“先做经纪人”即可。</div>
+                </div>
+            </div>
+            
+            <div class="nav-buttons">
+                <a href="#page5" class="nav-btn">上一页</a>
+                <a href="#page7" class="nav-btn">下一页</a>
+            </div>
+        </section>
+        
+        <!-- 页面7：最后冲刺 · 立即行动 -->
+        <section id="page7" class="section section-7">
+            <h2 class="highlight">🔥 紧急提醒</h2>
+            
+            <div class="section-content">
+                <p>瑞丽、腾冲、昆明、成都、广州</p>
+                <p>每个城市只招1名独家代理人</p>
+                <br>
+                <p>已有23人抢占区域</p>
+                <p>还剩7席</p>
+                <br>
+                <p>错过这次，你的城市就是别人的地盘</p>
+            </div>
+            
+            <a href="#form" class="btn">✍️ 立即锁定我的区域</a>
+            
+            <div class="footer">
+                <p>提交后24小时内，招商经理将与您联系</p>
+                <p>咨询电话：[你的电话]</p>
+                <p>办公地址：昆明市盘龙区奥斯迪商务中心[具体楼层] 经纪人管理办公室</p>
+                <small>本H5由中缅公盘经纪人管理办公室出品</small>
+                <small>让资源变现，让信任增值</small>
+            </div>
+            
+            <div class="nav-buttons">
+                <a href="#page6" class="nav-btn">上一页</a>
+                <a href="#form" class="nav-btn">立即报名</a>
+            </div>
+        </section>
+        
+        <!-- 表单页面 -->
+        <section id="form" class="section">
+            <h2>填写报名信息</h2>
+            
+            <!-- 使用Formspree进行表单数据收集 -->
+            <form id="applicationForm" class="form" action="https://formspree.io/f/xknajknw" method="POST">
+                <div class="form-group">
+                    <label for="name">姓名 *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">手机号 *</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="region">意向区域 *</label>
+                    <select id="region" name="region" required>
+                        <option value="">请选择</option>
+                        <option value="瑞丽">瑞丽</option>
+                        <option value="腾冲">腾冲</option>
+                        <option value="昆明">昆明</option>
+                        <option value="成都">成都</option>
+                        <option value="广州">广州</option>
+                        <option value="其他">其他</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label>有无团队 *</label>
+                    <div class="radio-group">
+                        <div class="radio-option">
+                            <input type="radio" id="team-yes" name="team" value="有团队" required>
+                            <label for="team-yes">有团队</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="team-no-resource" name="team" value="无团队，但有资源">
+                            <label for="team-no-resource">无团队，但有资源</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="team-no" name="team" value="暂时没有">
+                            <label for="team-no">暂时没有</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <input type="hidden" id="referrer" name="referrer" value="自动识别">
+                <input type="hidden" name="_subject" value="中缅公盘代理人报名">
+                <input type="hidden" name="_next" value="#thankyou">
+                
+                <button type="submit" class="btn">提交报名</button>
+            </form>
+            
+            <div class="nav-buttons">
+                <a href="#page7" class="nav-btn">上一页</a>
+            </div>
+        </section>
+        
+        <!-- 感谢页 -->
+        <section id="thankyou" class="section hidden">
+            <h2>🎉 提交成功！</h2>
+            
+            <div class="section-content">
+                <p>感谢您申请中缅公盘代理人</p>
+                <p>我们将在24小时内与您联系</p>
+                <p>请保持手机畅通</p>
+                
+                <h3>在此期间，您可以：</h3>
+                <ol>
+                    <li>截图保存本页，分享给可能一起干的朋友</li>
+                    <li>关注本公众号，提前了解经纪人培训资料</li>
+                    <li>准备好您的资源清单，面谈时我们聊得更透</li>
+                </ol>
+                
+                <h3>再次强调</h3>
+                <p>瑞丽、腾冲、昆明、成都、广州</p>
+                <p>先签先得，一个城市只留一个人</p>
+                <p>期待与您见面！</p>
+            </div>
+            
+            <div class="nav-buttons">
+                <a href="#page1" class="nav-btn">返回首页</a>
+                <a href="#" class="nav-btn" onclick="shareToFriend()">分享给好友</a>
+            </div>
+        </section>
+    </div>
+    
+    <script>
+        // 表单提交处理
+        document.getElementById('applicationForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // 模拟表单提交
+            setTimeout(function() {
+                // 隐藏所有页面
+                document.querySelectorAll('.section').forEach(function(section) {
+                    section.classList.add('hidden');
+                });
+                // 显示感谢页
+                document.getElementById('thankyou').classList.remove('hidden');
+            }, 1000);
+        });
+        
+        // 分享功能
+        function shareToFriend() {
+            if (navigator.share) {
+                navigator.share({
+                    title: '中缅公盘·全国代理人招募',
+                    text: '不用投钱，躺赚佣金！中缅公盘全国代理人招募中，快来加入吧！',
+                    url: window.location.href
+                });
+            } else {
+                // 复制链接到剪贴板
+                navigator.clipboard.writeText(window.location.href).then(function() {
+                    alert('链接已复制到剪贴板，请分享给好友');
+                });
+            }
+        }
+        
+        // 平滑滚动
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
